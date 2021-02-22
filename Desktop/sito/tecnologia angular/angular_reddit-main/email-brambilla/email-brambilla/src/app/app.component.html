@@ -1,0 +1,20 @@
+<div class="container">
+  <form class="jumbotron">
+      <h3 class="display-4">Add a Link</h3>
+      <div class="form-group">
+        <label for="address">Title:</label>
+        <input name="address" #indirizzo class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="object">Link:</label>
+        <input name="object" #oggetto class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="text">Link:</label>
+        <input name="text" #messaggio class="form-control">
+      </div>
+    <button (click)="Send(indirizzo, oggetto, messaggio)" class="btn btn-primary">
+      Invia
+    </button>
+  </form>
+</div>

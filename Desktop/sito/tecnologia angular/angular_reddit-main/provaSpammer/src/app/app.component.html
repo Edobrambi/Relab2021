@@ -1,0 +1,14 @@
+<form>
+  <div>
+    <label for="useless">cose inutile</label>
+    <input name="useless" #useless>
+  </div>
+  <div>
+    <label for="count">spam</label>
+    <input name="count" #count>
+  </div>
+  <button (click)="addSpam(useless, count)">Submit spam</button>
+</form>
+<ul>
+  <li *ngFor="let testo of articles">{{testo}}</li>
+</ul>
