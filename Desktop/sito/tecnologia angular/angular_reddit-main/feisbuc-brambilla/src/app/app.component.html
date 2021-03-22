@@ -1,11 +1,12 @@
 <div class="container">
   <form class="jumbotron">
       <div class="form-group">
-        <label for="name"></label>
+        <label for="name">Nome</label>
         <input name="name" #newname class="form-control">
       </div>
+      <br>
       <div class="form-group">
-        <label for="text"></label>
+        <label for="text">messaggio</label>
         <input name="text" #newtext class="form-control">
       </div>
     <button (click)="addPost(newname, newtext)" class="btn btn-primary">

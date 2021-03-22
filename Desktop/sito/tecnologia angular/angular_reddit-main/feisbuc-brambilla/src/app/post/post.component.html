@@ -4,3 +4,7 @@
 <div class="card-body">
   <a> {{ post.text }}</a>
 </div>
+<button (click)="addLike()" class="btn btn-primary">
+  like
+</button>
+<p>{{post.like}}</p>
