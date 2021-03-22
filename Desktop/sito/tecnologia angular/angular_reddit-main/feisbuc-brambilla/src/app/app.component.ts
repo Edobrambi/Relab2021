@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import{ Post } from './post/post.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'feisbuc-brambilla';
+  posts:Post[];
+
+  addPost(name: HTMLInputElement, text: HTMLInputElement): boolean {
+    this.posts.push(new Post(name.value, text.value));
+    name.value = '';
+    text.value = '';
+    return false;
+
+  }
 }
