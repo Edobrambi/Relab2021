@@ -13,3 +13,10 @@
     </button>
   </form>
 </div>
+<div class="container">
+  <!-- start adding here -->
+  <app-post
+  *ngFor="let a of posts" [post]="a">
+  </app-post>
+  <!-- end adding here -->
+</div>
