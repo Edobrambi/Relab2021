@@ -11,5 +11,11 @@ export class RoomListComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  dettagli(hotel : Hotel){
+    console.log (hotel.name);
+    console.log (hotel.id);
+    console.log (hotel.num_D_bed);
+    console.log (hotel.num_S_bed);
+    
+  }
 }

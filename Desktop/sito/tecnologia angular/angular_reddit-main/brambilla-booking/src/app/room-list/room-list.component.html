@@ -1,7 +1,9 @@
 <p>lista stanze</p>
 <ul>
     <li *ngFor="let hotel of listaHotels">
-        nome: {{hotel.name}}<br>
+        nome: {{hotel.name}}
+        <button (click) = "dettagli(hotel)">Dettagli</button>
+        <hr>
        
     </li>
 </ul>
