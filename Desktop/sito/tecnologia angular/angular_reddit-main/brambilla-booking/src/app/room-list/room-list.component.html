@@ -1,2 +1,7 @@
 <p>lista stanze</p>
-{{listaHotels | json}}
+<ul>
+    <li *ngFor="let hotel of listaHotels">
+        nome: {{hotel.name}}<br>
+       
+    </li>
+</ul>
